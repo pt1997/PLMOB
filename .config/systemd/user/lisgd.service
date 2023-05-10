@@ -1,0 +1,13 @@
+# not used yet
+
+[Unit]
+Description=lisgd gestures
+Requires=sway.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/lisgd
+Restart=always
+
+[Install]
+WantedBy=default.target

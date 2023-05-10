@@ -1,0 +1,16 @@
+# not used yet
+
+[Unit]
+Description=lcarsde-application-starter.py
+Requires=sway.service
+
+[Service]
+Type=simple
+ExecStartPre=/usr/bin/swaymsg 'workspace new'
+ExecStart=lcarsde-application-starter.py
+ExecStartPost=/usr/bin/swaymsg 'workspace prev'
+Restart=always
+RestartSec=1ms
+
+[Install]
+WantedBy=default.target
