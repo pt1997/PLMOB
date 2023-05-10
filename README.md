@@ -14,14 +14,14 @@ The first goal is to provide an install script that can be run on the base Arch 
 
 ## Currently used Software:
 
-|----------|---------|
-| Sway --- | window manager and Wayland compositor |
-| lisgd ---| sxmo deamon for touchscreen gestures |
+| Software | Description      |
+|----------|------------------|
+| Sway     | window manager and Wayland compositor |
+| lisgd    | sxmo deamon for touchscreen gestures |
 | lcarsde-application-starter.py | applauncher |
 | squeekboard | tochscreen keyboard from gnome/Librem 5 |
-| swaywsr -| workspace renamer |
-| foot --- | sxmo Terminal |
-|----------|---------|
+| swaywsr  | workspace renamer |
+| foot     | sxmo Terminal |
 
 ## other software I tested and plan to use:
 - https://mauikit.org/apps/
