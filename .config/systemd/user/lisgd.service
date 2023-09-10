@@ -1,13 +1,11 @@
-# not used yet
-
 [Unit]
 Description=lisgd gestures
-Requires=sway.service
+After=default.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/lisgd
+ExecStart=/home/alarm/.config/lisgd/lisgd
 Restart=always
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
