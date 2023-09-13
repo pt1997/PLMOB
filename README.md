@@ -10,7 +10,7 @@
 
 - Usability and stability are important for me. I'm fine with configuring things that don't need to be changed on a daily basis via CLI/TUI tools, they don't need a menu entry or button.
 
-The first goal was to provide an installation script that can be run on the base Arch install, since [it has not been updates since February](https://github.com/dreemurrs-embedded/Pine64-Arch/releases) I'll probably have to release an image
+The first goal was to provide an installation script that can be run on the base Arch install, since [it has not been updates since February](https://github.com/dreemurrs-embedded/Pine64-Arch/releases) I'll probably have to release an image.
 After that, I want to make the script work on the Debian.
 
 ## Currently used Software:
