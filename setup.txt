@@ -1,0 +1,31 @@
+#!/bin/bash
+#pinephone postmarket
+
+sudo apk add git sway squeekboard make build-base install-makedepends rust cargo foot imv dmenu python3 iio-sensor-proxy-openrc meson dbus-dev
+
+#optional:
+vim mandoc mandoc-apropos man-pages docs bash-completion
+
+#for building lisgd:
+
+install-makedepends lisgd
+cd lisgd
+make -B
+sudo install -Dm755 lisgd /usr/bin/lisgd
+mv lisgd-unlock.def.h config.def.h
+make -B
+sudo install -Dm755 lisgd /usr/bin/lisgd-unlock
+
+#packages from git:
+git clone https://github.com/pedroscaff/swaywsr
+cd swaywsr/
+cargo build --release
+sudo install -Dm755 "target/release/swaywsr" "/usr/bin/swaywsr"
+sudo install -Dm644 assets/example_config.toml -t "/usr/share/doc/swaywsr/examples/example_config.toml"
+cd ..
+rm -R swaywsr
+
+
+wget https://raw.githubusercontent.com/lcarsde/application-starter/master/src/lcarsde-application-starter.py
+sudo install -Dm755 lcarsde-application-starter.py /usr/bin/lcarsde-application-starter.py
+
