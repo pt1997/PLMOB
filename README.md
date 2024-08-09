@@ -10,14 +10,13 @@
 
 - Usability and stability are important for me. I'm fine with configuring things that don't need to be changed on a daily basis via CLI/TUI tools, they don't need a menu entry or button.
 
-The first goal was to provide an installation script that can be run on the base Arch install, since [it has not been updates since February](https://github.com/dreemurrs-embedded/Pine64-Arch/releases) I'll probably have to release an image.
-After that, I want to make the script work on the Debian.
+- Currently I'm trying to use PostmarketOS as base
 
 ## Currently used Software:
 
 | Software | Description      |
 |----------|------------------|
-| Hyprland     | window manager and Wayland compositor |
+| sway     | window manager and Wayland compositor |
 | lisgd    | sxmo deamon for touchscreen gestures |
 | lcarsde-application-starter.py | applauncher |
 | squeekboard | tochscreen keyboard from gnome/Librem 5 |

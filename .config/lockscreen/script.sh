@@ -1,4 +1,6 @@
 #!/bin/bash
+# TODO: needs to be adapted for sway
+
 cd "$(dirname "$0")"
 systemctl --user is-active --quiet lisgd
 if [ $? -eq 0 ]
