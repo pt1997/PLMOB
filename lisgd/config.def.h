@@ -21,13 +21,12 @@ double edgesizeleft = 50.0;
 double edgesizetop = 50.0;
 double edgesizeright = 50.0;
 double edgesizebottom = 50.0;
-char *device = "/dev/input/event2";
+char *device = "/dev/input/by-path/platform-ff130000.i2c-event";
 
 //Gestures can also be specified interactively from the command line using -g
 Gesture gestures[] = {
 	/* nfingers  gesturetype  command */
 	{ 1,         SwipeLR,     EdgeAny, DistanceMedium, ActModeReleased, "swaymsg 'workspace prev'" },
-//	{ 2,         SwipeLR,     EdgeAny, DistanceMedium, ActModeReleased, "hyprctl dispatch movetoworkspace m-1" },
 	{ 1,         SwipeRL,     EdgeAny, DistanceMedium, ActModeReleased, "swaymsg 'workspace next'" },
 	{ 2,         SwipeRL,     EdgeAny, DistanceMedium, ActModeReleased, "swaymsg 'workspace new'" },
 	{ 1,         SwipeDU,     EdgeBottom, DistanceAny, ActModeReleased, "busctl call --user sm.puri.OSK0 /sm/puri/OSK0 sm.puri.OSK0 SetVisible b true" },
