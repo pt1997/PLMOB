@@ -8,3 +8,6 @@ default_border none
 
 # include defaults
 include /etc/sway/config.d/*
+
+#switch mode
+bindsym $mod+m exec "ln -sf desktop-mode ~/.config/sway/config; swaymsg reload"

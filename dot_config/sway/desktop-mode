@@ -1,9 +1,12 @@
-# Default config for sway
+# Default config for sway - desktop mode
 #
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
 include ~/.config/sway/config.d/*
+
+#switch mode
+bindsym $mod+m exec "ln -sf mobile-mode ~/.config/sway/config; swaymsg reload"
 
 ### Variables
 # Home row direction keys, like vim
