@@ -3,9 +3,6 @@
 # include plmob defaults 
 include ~/.config/sway/config.d/*
 
-# basic settings
-default_border none
-
 # include defaults
 include /etc/sway/config.d/*
 

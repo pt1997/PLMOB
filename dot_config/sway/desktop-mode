@@ -163,10 +163,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-#border settings
-smart_borders on
-hide_edge_borders both
-default_border pixel 10
 #
 # Status Bar:
 #
